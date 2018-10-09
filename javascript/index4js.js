@@ -4,8 +4,8 @@ function verifSaisie(){
   var firstName = document.getElementById('firstname').value;
   var city = document.getElementById('city').value;
   // Déclaration de constantes définissant la Regex pour [le nom et le prénom] et la ville à part
-  const regexFirstlast =  /^[a-zA-ZäãåçéèêëíìîïñóòôöõúùûüÿÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜŸ-]+$/;
-  const regexCity =  /^[a-zA-Z-]+$/;
+  const regexFirstlast =  /^[a-zA-ZÀ-ÿ-]+$/;
+  const regexCity =  /^[a-zA-Zéèê-]+$/;
   // Condition gérant les erreurs de saisie
   if(!regexCity.test(city)||city==null){
     //PAS BON : VILLE
